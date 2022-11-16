@@ -1,0 +1,44 @@
+:root{ /* Custom properties: son entidades definidas por los autores de CSS que contienen valores específicos para reutilizar en un documento*/
+  --blanco: #FFFFFF;
+  --oscuro: #212121;
+  --primario: #FFC107;
+  --secundario:#0097a7;
+  ---gris: #757575;
+
+}
+
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 16px;
+}
+
+/* Debido que el rem fue lo ultimo en tema de estilos para paginas web, pero la medida en px a sido fiel a la utilizacion para los estilos debeido 
+a la sensilles comparado con rem dado que al utilizar rem  teniendo una etiqueta y una subetiqueta, la diferencia de tamaño sera siempre que la seg
+unda sera el doble de la primera. Para evitar esto utilizamos un "hack" para la utilizacion de rem en nuestras etiquetas para el documuento
+que estamos desarrollando, primero agarrar la etiqueta html he ingresar font-size -> 62.5% y body font-size->16px. Esto permite 
+que nuestros futuros rem sean mas sencillo a utilizar ya que se ajusta a la medida en px.
+
+** 1 rem = 10px.
+** Si estamos creando un sitio web para un televisor, un smart watch, tablet, etc. Una pantalla con densidad alta es recomendable ocupar
+rem, sacando todo el probecho a los estilos de cada elemento de una pagina web en cualquier formato nombrado.
+*/
+
+.titulo{
+  text-align: center; /*Centrar el elemento en la pantalla*/
+  font-size: 3.8rem; /*Todo lo que sea con font son cambios de fuentes */
+  font-family: Arial, Helvetica, sans-serif;
+  /*color: var(--secundario);*/
+}
+
+.titulo span{
+  font-size: 2rem;
+/*   color: var(--oscuro);*/
+}
+
+/* span{
+  color: green!important;
+} */
