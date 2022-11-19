@@ -14,6 +14,7 @@ html{
 
 body{
   font-size: 16px;
+  font-family: 'Krub', sans-serif;
 }
 
 /* Debido que el rem fue lo ultimo en tema de estilos para paginas web, pero la medida en px a sido fiel a la utilizacion para los estilos debeido 
@@ -30,7 +31,7 @@ rem, sacando todo el probecho a los estilos de cada elemento de una pagina web e
 .titulo{
   text-align: center; /*Centrar el elemento en la pantalla*/
   font-size: 3.8rem; /*Todo lo que sea con font son cambios de fuentes */
-  font-family: Arial, Helvetica, sans-serif;
+  
   /*color: var(--secundario);*/
 }
 
@@ -42,3 +43,30 @@ rem, sacando todo el probecho a los estilos de cada elemento de una pagina web e
 /* span{
   color: green!important;
 } */
+
+.contenedor{
+  width: 120rem;
+/*   margin-top: 0;
+  marg in-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; */
+
+  margin: 0 auto 0 auto; /*Es lo mismo que esta comentado arriba*/
+}
+
+.nav-bg{
+  background-color: var(--secundario);
+}
+
+.navegacion-principal{
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; /* Mueve el contenido horizontalmente */
+}
+
+.navegacion-principal a {
+
+  color: var(--blanco);
+  text-decoration: none; /* Modifica el tipo de efecto del texto, este caso se elimina la linea debajo de las palabras*/
+}
+

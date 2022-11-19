@@ -7,9 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diseñador Freelancer</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
   <link rel="preload" href="css/style.css" as="style">
   <!--Lo que se esta ejecutando es que carge la hoja de estilo lo mas rapido que pueda (previamiente) y lo carga como hoja de estilo-->
-  <link href="css/style.css" rel="stylesheet"> 
+  <link href="css/style.css" rel="stylesheet">
   <!-- Con link relacionamos nuestro archivo css -->
   <!-- Ocupamos ref para relacionar la hoja de estilo actual  -->
 </head>
@@ -17,15 +21,18 @@
 <body>
 
   <header>
-    <h1 class="titulo">Juan de la torre <span>Freelancer</span></h1>   <!-- span mas que nada es una etiqueta, pero su cualidad es que podemos ocupar en css jejej -->
+    <h1 class="titulo">Juan de la torre <span>Freelancer</span></h1>
+    <!-- span mas que nada es una etiqueta, pero su cualidad es que podemos ocupar en css jejej -->
   </header>
 
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Sobre Mi</a>
-    <a href="#">Clientes</a>
-    <a href="#">Contactos</a>
-  </nav>
+  <div class="nav-bg">
+    <nav class="navegacion-principal contenedor"> <!-- Se puede poner 2 clases dentro de una etiqueta -->
+      <a href="#">Inicio</a>
+      <a href="#">Sobre Mi</a>
+      <a href="#">Clientes</a>
+      <a href="#">Contactos</a>
+    </nav>
+  </div>
 
   <!--   <img src="img/hero.jpg"> -->
 
