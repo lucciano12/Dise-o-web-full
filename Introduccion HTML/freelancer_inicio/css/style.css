@@ -1,72 +1,202 @@
-:root{ /* Custom properties: son entidades definidas por los autores de CSS que contienen valores específicos para reutilizar en un documento*/
-  --blanco: #FFFFFF;
+:root {
+  /* Custom properties: son entidades definidas por los autores de CSS que contienen valores específicos para reutilizar en un documento*/
+  --blanco: #ffffff;
   --oscuro: #212121;
-  --primario: #FFC107;
-  --secundario:#0097a7;
+  --primario: #ffc107;
+  --secundario: #0097a7;
   ---gris: #757575;
-
 }
 
-
-html{
+html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-body{
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Linea de codigo 12 y 15 son importante o vitales en saber la dimension del elemento */
+
+body {
   font-size: 16px;
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
 }
 
-/* Debido que el rem fue lo ultimo en tema de estilos para paginas web, pero la medida en px a sido fiel a la utilizacion para los estilos debeido 
-a la sensilles comparado con rem dado que al utilizar rem  teniendo una etiqueta y una subetiqueta, la diferencia de tamaño sera siempre que la seg
-unda sera el doble de la primera. Para evitar esto utilizamos un "hack" para la utilizacion de rem en nuestras etiquetas para el documuento
-que estamos desarrollando, primero agarrar la etiqueta html he ingresar font-size -> 62.5% y body font-size->16px. Esto permite 
-que nuestros futuros rem sean mas sencillo a utilizar ya que se ajusta a la medida en px.
-
-** 1 rem = 10px.
-** Si estamos creando un sitio web para un televisor, un smart watch, tablet, etc. Una pantalla con densidad alta es recomendable ocupar
-rem, sacando todo el probecho a los estilos de cada elemento de una pagina web en cualquier formato nombrado.
-*/
-
-.titulo{
-  text-align: center; /*Centrar el elemento en la pantalla*/
+h1{
   font-size: 3.8rem; /*Todo lo que sea con font son cambios de fuentes */
-  
+
+}
+
+h2{
+  font-size: 2.8rem;
+}
+
+h3{
+  font-size: 1.8rem;
+}
+
+h1,h2,h3{
+  text-align: center; /* Este codigo alinea todos los titulos puestos con la etiqueta hx */
+}
+
+.titulo {
+  text-align: center; /*Centrar el elemento en la pantalla*/
   /*color: var(--secundario);*/
 }
 
-.titulo span{
+/*
+.titulo::after{ /* Seudo elemente 
+  content: "Esto va despues del titulo";
+} */
+
+.titulo span {
   font-size: 2rem;
-/*   color: var(--oscuro);*/
+  /*   color: var(--oscuro);*/
 }
 
 /* span{
   color: green!important;
 } */
 
-.contenedor{
-  width: 120rem;
-/*   margin-top: 0;
+.contenedor {
+  max-width: 120rem; /* ponemos max-width para decir toma maximo 1200 px, si solo esta disponible , si no toma el 100% del ancho */
+  /*   margin-top: 0;
   marg in-right: auto;
   margin-bottom: 0;
   margin-left: auto; */
-
   margin: 0 auto 0 auto; /*Es lo mismo que esta comentado arriba*/
 }
 
-.nav-bg{
+.boton{
+  background-color: var(--secundario);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: .5rem;
+  width: 90%;
+  text-align: center;
+}
+
+@media (min-width:768px){
+  .boton{
+    width:auto;
+  }
+}
+
+.nav-bg {
   background-color: var(--secundario);
 }
 
-.navegacion-principal{
-  padding: 1rem;
+.navegacion-principal {
   display: flex;
-  justify-content: space-between; /* Mueve el contenido horizontalmente */
+  flex-direction: column; /*es como esta definida una lista, si esta como fila o columna*/
+
+}
+
+@media (min-width: 768px) {
+
+  .navegacion-principal{
+    flex-direction: row;
+    justify-content: space-between; /*Distribuye los valores de la lista en espacio separados*/
+
+  }
+    
 }
 
 .navegacion-principal a {
-
+  display: block;
+  text-align: center;
   color: var(--blanco);
   text-decoration: none; /* Modifica el tipo de efecto del texto, este caso se elimina la linea debajo de las palabras*/
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
 }
 
+.navegacion-principal a:hover {
+  /* Hover nos permite interactuar con un elemento este caso los enlaces cuando pasamos el raton se ponen de color */
+  background-color: var(--primario);
+  color: var(--oscuro); /* Se aplica el color para las palabras de los enlaces este caso negro */
+}
+
+.hero{
+  background-image: url(/img/hero.jpg); /* Declaras la imagen en background */
+  background-repeat: no-repeat; /* Para que no se repita la imagen en el background */
+  background-size: cover; /* Toma todo el ancho disponible */
+  height: 450px;
+  position: relative; /* El padre siempre debe tener la posicion relativa, para que el hijo tenga la posicion absoluta */
+}
+
+/* Cuando quieres posicionar el contenido en un lugar exacto, en un lugar preciso, lo mejor es lo que se llama posicion absoluta y relativa */
+.contenido-hero{
+  position: absolute;
+  background-color: rgb(0, 0, 0, .7 ); /* Version anterior */
+  background-color: rgb(0 0 0 / 70%);
+  width: 100%;
+  height: 100%;
+
+  display: flex; /* Todo los contenidos que son hijos por defecto los ordena de izquierda a derecha */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* EL BLOQUE DE CODIGO 109-112, SIRVE PARA ALINEAR TANTO EN VERTICAR COMO HORIZONTAL
+  PARA CUALQUIER PROYECTO UN CONTENIDO*/
+
+
+}
+
+.contenido-hero h2,
+.contenido-hero p{
+  color: var(--blanco);
+}
+
+.ubicacion{
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
+
+
+
+/* TIPS */
+
+/* Para alinear horizontalmente definido display:flex, es con justify-content, siempre cuando no cambies a column*/
+/* Para ainear verticalmente con align-items */
+
+
+/* -------------------------- MEDIA QUERY---------------------------- */
+
+/* EJEMEPLO : */
+
+/* @media (min-width: 480px ){
+  body{
+    background-color: #ffc107;
+  }
+} /* Media query que es la adaptacion para cualquier dispositivo */ 
+
+
+
+
+/* @media (min-width: 480px) {                  TELEFONO
+    
+} */
+
+/* @media (min-width: 768px) {                   TABLET
+    
+} */
+
+/* @media (min-width: 1140px) {                   PARA PC
+    
+} */
+
+/* @media (min-width: 1400px) {                   TAMAÑO QUE HABITUALMENTE SE OCUPA EN FRAMEWORK
+    
+} */
