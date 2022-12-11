@@ -79,6 +79,25 @@ h3 {
   margin: 3rem 0;
 }
 
+/**Footer**/
+
+.footer{
+  background-color: var(--primarioOscuro);
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer__texto{
+  font-family: var(--fuentePrincipal);
+  text-align: center;
+
+}
+
+/* .footer__texto span{
+  
+} --tengo que verlo despues de terminar la seccion de este proyecto */
+
+
 /**Navegacion**/
 
 .navegacion{
@@ -86,16 +105,53 @@ h3 {
   padding: 1rem 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+ /*  gap: 2rem;  Separacion nuevo metodo */
 }
 
 .navegacion__enlace{
   font-family: var(--fuentePrincipal);
   color: var(--blanco);
   font-size: 1.5rem;
+  margin-right: 2rem;
 }
+
+.navegacion__enlace:last-of-type{ /* last-of-type es un seudo elemento o seudo selector */
+  margin-right: 0;
+}
+
 
 .navegacion__enlace--activo,
 .navegacion__enlace:hover{
   color: var(--secundario);
+}
+
+/**Grid**/
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@med
+
+/**Productos**/
+
+.producto{
+
+}
+
+.producto__imagen{
+
+}
+
+.producto__informacion{
+
+}
+
+.producto__nombre{
+
+}
+
+.producto__precio{
+
 }
