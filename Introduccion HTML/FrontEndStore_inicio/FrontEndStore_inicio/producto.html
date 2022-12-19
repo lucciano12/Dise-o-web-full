@@ -28,8 +28,8 @@
   </header>
 
   <nav class="navegacion">
-    <a class="navegacion__enlace navegacion__enlace--activo" href="#">Tienda</a>
-    <a class="navegacion__enlace" href="#">Nosotros</a>
+    <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
   </nav>
 
   <main class="contenedor">
@@ -42,24 +42,22 @@
         <p>Quisque fermentum turpis urna, quis rhoncus mauris pretium vitae. Nam suscipit placerat sem, imperdiet
           ullamcorper quam tempor suscipit. Pellentesque mattis urna ac massa dictum ornare. Vestibulum posuere nisl
           orci, et commodo neque aliquam vitae. Aenean a molestie libero, eget tincidunt lacus. Vivamus lectus enim,
-          vestibulum in elit ac, vehicula aliquam magna. Nullam varius, ipsum gravida tempus condimentum, ligula odio
-          hendrerit purus, eget mattis nunc mi eleifend massa. Aliquam neque orci, laoreet vitae malesuada quis,
-          tristique ac enim. Vivamus ut lectus diam. Sed vitae sollicitudin ante. Nam quis tempor quam. Nam sed iaculis
-          velit. Quisque hendrerit imperdiet orci et suscipit. Quisque id nibh sapien. Phasellus non sollicitudin massa.
-          Pellentesque quis dolor id nisi interdum iaculis.</p>
-      </div>
-      
-      <form class="formulario">
-        <select>
-          <option disabled selected>-- Seleccionar Talla --</option>
-          <option>Chica</option>
-          <option>Mediana</option>
-          <option>Grande</option>
-        </select>
-        <input type="number" placeholder="Cantidad" min="1">
-        <input type="submit" value="Agregar al Carrito">
-      </form>
+          vestibulum in elit ac.
+        </p>
 
+        <form class="formulario">
+          <select class="formulario__campo">
+            <option disabled selected>-- Seleccionar Talla --</option>
+            <!-- Esta seleccionado por default pero no se puede operar -->
+            <option>Chica</option>
+            <option>Mediana</option>
+            <option>Grande</option>
+          </select>
+          <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+          <!-- min es la cantidad minima que puede existir osea no puede ser 0 la cantidad minimo 1  -->
+          <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+        </form>
+      </div>
     </div>
   </main>
 
