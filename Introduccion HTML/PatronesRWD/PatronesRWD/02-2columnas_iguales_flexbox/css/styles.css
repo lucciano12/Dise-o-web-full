@@ -39,3 +39,11 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media(min-width: 768px){
+    .dos-columnas{
+        display: flex ;
+        justify-content: space-between; /* Permite alinear conteniedo de izq a derecha. Con space-between dejaria un contenido a la izq y derecha dejando el centro libre */
+        gap: 2rem; /* Separa los contenido */
+    }
+}
