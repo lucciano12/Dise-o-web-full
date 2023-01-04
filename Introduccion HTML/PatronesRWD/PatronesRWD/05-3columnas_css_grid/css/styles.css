@@ -49,3 +49,26 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width:768px){
+    .contenedor-grid{
+        display: grid;
+        grid-template-areas: "izquierda contenido derecha"; /* Se ocupa cuando tenemos un layout mas complicado y tenemos que definir los campos o "dibujar"*/
+        grid-template-columns: 1fr 3fr 1fr;
+        /* grid-template-columns: 20% 60% 20%; */
+        grid-auto-flow: column ; /* El flujo de contenido se van acomodar en columnas. 
+        Este caso sirve por lo que se conoce colocacion automatica de grid, significa 
+        que se van creando cuadricula al hacer cambio de posicionamiento, en otras palabra, grid lo acomoda automaticamente*/
+        column-gap: 2rem;
+    }
+
+    .contenedor-principal{
+        grid-area: contenido;
+        /* grid-column: 2 / 3; */
+    }
+
+    .sidebar-1{
+        grid-area: izquierda;
+        /* grid-column: 1 / 2; */
+    }
+}

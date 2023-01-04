@@ -39,3 +39,25 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media(min-width: 768px){
+
+    .tres-columnas{
+        display: flex;
+        gap: 2rem;
+    }
+
+    /* Para el caso que no tenga soporte los navegdores web con gap, o mejor dicho para mas soporte 
+    
+    .tres-columnas{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .entrada-blog{
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+
+    */
+
+}
