@@ -51,5 +51,20 @@ p {
 
 @media (min-width: 768px) {
     
+    .contenedor-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedor-principal{
+        flex-basis: calc(60% - 1rem);
+    }
+
+    .sidebar{
+        flex-basis: calc(20% - 1rem); /* Creamos una base o un ancho */
+    }
     
+    .sidebar-1{
+        order: -1; /* Nos sirve para posicionar el contenido primero  */
+    }
 }
