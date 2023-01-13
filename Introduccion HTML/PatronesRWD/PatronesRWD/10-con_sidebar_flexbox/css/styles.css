@@ -49,3 +49,22 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width: 769px) {
+    .con-sidebar{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    aside{
+        flex: 1; 
+        /* Esto se conoce como factor de crecimiento. QUiere decir que el aside
+        va creciendo a medida de su contenido a 1 pixel, osea su contenido crece cada 1 pixel
+        . Esto sirve para el ajuste de contenido hijo, ya que el contenido padre va creciendo y sus hijos igual*/
+    }
+
+    article{
+        flex: 3;
+    }
+}

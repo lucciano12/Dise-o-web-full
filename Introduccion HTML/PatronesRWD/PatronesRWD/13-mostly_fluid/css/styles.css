@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 62.5%; 
 }
 
 *,
@@ -37,3 +37,25 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+.contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto; /* centra los 95% de px del contenido */
+}
+
+@media (min-width: 768px) {
+    .contenedor{
+        width: 80%;
+    }
+}
+
+@media (min-width: 992) {
+    .contenedor{
+        width: 60%;
+    }
+}
+
+img{
+    max-width: 100%;
+}
