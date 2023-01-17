@@ -26,57 +26,60 @@ body {
 
 /**Globales**/
 
-.contenedor{
+.contenedor {
   max-width: 120rem;
   width: 90%;
   margin: 0 auto;
 }
 
-a{
+a {
   text-decoration: none; /* Quitamos el interlineado */
 }
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--fuenteHeading);
 }
 
-h1{
+h1 {
   font-size: 4.8rem;
 }
 
-h2{
+h2 {
   font-size: 4rem;
 }
 
-h3{
+h3 {
   font-size: 3.2rem;
 }
 
-h4{
+h4 {
   font-size: 2.8rem;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
 /**Utilidades**/
 
-.no-margin{
+.no-margin {
   margin: 0; /* Es para quitar ciertos margenes que aplica el navegador */
 }
 
-.no-padding{
+.no-padding {
   padding: 0;
 }
 
-.centrar-texto{
-  text-align: center;
+.centrar-texto {
+  text-align: center; /* Texto centrado */
 }
 
 /*Header*/
 
-.header{
+.header {
   background-image: url(../img/banner.jpg);
   height: 60rem;
   background-size: cover; /* Para que tome todo el espacio disponible la imagen */
@@ -84,12 +87,34 @@ img{
   background-position: center center; /* La imagen se centra horizontalmente y verticalmente */
 }
 
-.header__texto{
+.header__texto {
   text-align: center; /* Texto centrado */
   color: var(--blanco);
   margin-top: 5rem;
 }
 
-.barra{
-  
+@media (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between; /* Ordenar el contenido orizontalmente, 
+      y just.. es para tener el elemento el lado derecho y izquierdo */
+    align-items: center; /* Alineamos verticalmente los contenido */
+  }
+}
+
+.logo{
+  color: var(--blanco);
+}
+
+.logo_nombre{
+  font-weight: 400; /* Peso de la fuente (El tamaño) */
+}
+
+.logo__bold{
+  font-weight: 700; /* Peso de la fuente (El tamaño) */
+}
+
+.navegacion__enlace{
+  display: block; /* Se despliegan los elemento hacia abajo o horizontalmente */
+
 }
