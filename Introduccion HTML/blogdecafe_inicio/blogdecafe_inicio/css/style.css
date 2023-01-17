@@ -1,0 +1,95 @@
+:root {
+  --fuenteHeading: "PT Sans", sans-serif;
+  --fuenteParrafo: "Lora", serif;
+
+  --primario: #784d3c;
+  --blanco: #ffffff;
+  --negro: #000000;
+}
+
+html {
+  box-sizing: border-box; /* Es para que el border, padding,, etc no afecte el ancho de muestro elemento */
+  font-size: 62.5%; /* 1 rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /* inherit heredera del box sizing, osea, el elemento padre */
+}
+
+body {
+  font-family: var(--fuenteParrafos);
+  font-size: 1.6rem;
+  line-height: 2; /* Interlineado, que es el espacio entre los contenido del parrafo o los versos */
+}
+
+/**Globales**/
+
+.contenedor{
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none; /* Quitamos el interlineado */
+}
+
+h1, h2, h3, h4{
+  font-family: var(--fuenteHeading);
+}
+
+h1{
+  font-size: 4.8rem;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 3.2rem;
+}
+
+h4{
+  font-size: 2.8rem;
+}
+
+img{
+  max-width: 100%;
+}
+
+/**Utilidades**/
+
+.no-margin{
+  margin: 0; /* Es para quitar ciertos margenes que aplica el navegador */
+}
+
+.no-padding{
+  padding: 0;
+}
+
+.centrar-texto{
+  text-align: center;
+}
+
+/*Header*/
+
+.header{
+  background-image: url(../img/banner.jpg);
+  height: 60rem;
+  background-size: cover; /* Para que tome todo el espacio disponible la imagen */
+  background-repeat: no-repeat;
+  background-position: center center; /* La imagen se centra horizontalmente y verticalmente */
+}
+
+.header__texto{
+  text-align: center; /* Texto centrado */
+  color: var(--blanco);
+  margin-top: 5rem;
+}
+
+.barra{
+  
+}
