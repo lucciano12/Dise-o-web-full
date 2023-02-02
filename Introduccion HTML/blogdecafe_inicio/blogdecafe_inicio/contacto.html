@@ -26,7 +26,7 @@
         <nav class="navegacion">
           <a href="./nosotros.html" class="navegacion__enlace">Nosotros</a>
           <a href="./cursos.html" class="navegacion__enlace">Cursos</a>
-          <a href="./contacto.html" class="navegacion__enlace">Contacto</a>
+          <a href="contacto.html" class="navegacion__enlace">Contacto</a>
         </nav>
 
       </div>
@@ -47,37 +47,35 @@
   <!-- El bloque de abajo (El que esta comentado) nos mostrara la barra del footer cortado -->
 
   <main class="contenedor">
-    <h3 class="centrar-texto">Sobre Nosotros</h3>
+    <h3 class="centrar-texto">Contacto</h3>
+    <div class="contacto-bg"></div>
+
+    <form class="formulario">
+      <div class="campo">
+        <label classform="campo__label" for="nombre">Nombre: </label> <!-- Con for nos permite hacer click en el nombre y nos selecciona para escribir en el formulario atm -->
+        <input classform="campo__field" type="text" placeholder="Tu Nombre" id="nombre"> <!-- El id solo se puede ocupar en este .html -->
+        
+        <div class="campo">
+          <label classform="campo__label" for="email">E-mail: </label> 
+          <input classform="campo__field" type="text" placeholder="Tu Email" id="email"> 
+        </div>
+
+        <div class="campo">
+          <label calssform="campo__label" for="mensaje">Mensaje: </label> 
+          <textarea classform="campo__field campo__field--textarea" id="mensaje"></textarea>
+        </div>
+
+        <div class="campo">
+          <input type="submit" value="Enviar" class="boton boton--primario">
+        </div>
+        
+      </div>
+    </form>
   </main>
 
 
 
-  <div class="sobre-nosotros">
-    <div class="sobre-nosotros__imagen">
-      <img src="./img/nosotros.jpg" alt="imagen nosotros">
-    </div>
 
-    <div class="sobre-nosotros__texto">
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum elementum neque tristique facilisis.
-        Donec faucibus ultrices enim, non blandit lacus ornare vel. Aenean euismod sapien sit amet nibh ultricies, vel
-        porta dolor condimentum. Curabitur feugiat dignissim nulla, sit amet gravida purus dapibus a. Phasellus
-        placerat id ipsum et facilisis. Nam ipsum ex, luctus in nunc vitae, porttitor rhoncus nulla. In tempus euismod
-        dolor sed convallis. Pellentesque dapibus, lorem eu facilisis placerat, nibh tellus eleifend mi, nec ornare
-        ligula diam id risus.
-      </p>
-      <p>
-        Morbi vel tortor vestibulum, pretium lectus id, consectetur eros. Integer cursus malesuada elit nec dignissim.
-        Praesent dui orci, accumsan quis magna eu, ornare sollicitudin nisl. Interdum et malesuada fames ac ante ipsum
-        primis in faucibus. Etiam ut dignissim erat. Duis eget tellus ac dui lacinia pretium. Donec gravida, leo quis
-        porttitor sodales, mi elit rutrum ex, ut efficitur nulla ante quis nisl. Vestibulum tellus ante, finibus nec
-        luctus eu, consectetur eget est. Vivamus et ultricies risus.
-      </p>
-
-    </div>
-
-  </div>
 
   <footer class="footer"> <!-- El footer va ser negro para esta clase -->
     <div class="contenedor">
@@ -89,8 +87,8 @@
 
         <nav class="navegacion">
           <a href="./nosotros.html" class="navegacion__footer">Nosotros</a>
-          <a href="curso.html" class="navegacion__footer">Curso</a>
-          <a href="contacto.html" class="navegacion__footer">Contacto</a>
+          <a href="./curso.html" class="navegacion__footer">Curso</a>
+          <a href="./contacto.html" class="navegacion__footer">Contacto</a>
         </nav>
 
       </div>
