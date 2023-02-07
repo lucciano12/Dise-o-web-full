@@ -2,15 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"> <!-- Esta etiqueta nos permite interpretar nuestra lengua española -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Este nos permite hacer la interpretacion de una vista media query o celular  -->
+  <meta name="description" content="Pagina web"> <!-- Descripcion de la pagina -->
+  
+  <title>BlogDeCafe</title>
+
+  <!-- Prefetch --> <!-- Cagar la siguiente pagina para el usuario -->
+  <link rel="prefetch" href="./nosotros.html" as="document">
+
+  <!-- Preload --> <!-- Elemento que deben cargar inmediatamente -->
+  <link rel="preload" href="css/normalize.css" as="style">
   <link rel="stylesheet" href="css/normalize.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
-  <title>BlogDeCafe</title>
+
+
+  <!-- * ESTO NO LO OCUPAMOS. YA QUE ESTAMOS CARGANDO .WEBP QUE ES UN FOMRATO MAS LIVIANO QUE JPG* -->
+
+  <!-- <link rel="preload" href="./img/blog1.jpg" as="image">
+  <link rel="preload" href="./img/blog2.jpg" as="image">
+  <link rel="preload" href="./img/blog3.jpg" as="image"> -->
 </head>
 
 <body>
@@ -49,7 +67,11 @@
       <h3>Nuestro Blog</h3>
       <article class="entrada"> <!-- Cuando tenemos entrada a un foro ocupamos articles, es de HTML 5 -->
         <div class="entrada__imagen">
-          <img src="img/blog1.jpg" alt="imagen blog">
+          <picture> <!-- Esta etiqueta permite cargar las imagenes .webp -->
+            <source loading="lazy" srcset="img/blog1.webp" type="image/webp"><!-- Indicamos la direccion a la fuente lo que debe cargar. Si el navegador soporta este formato lo carge, si pasa lo de abajo .... -->
+            <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+            <!-- Quiere decir loading=lazy. Cuando llegue a leer ese elemento lo carge -->
+          </picture>
         </div>
 
         <div class="entrada__contenido">
@@ -73,7 +95,10 @@
 
       <article class="entrada"> <!-- Cuando tenemos entrada a un foro ocupamos articles, es de HTML 5 -->
         <div class="entrada__imagen">
-          <img src="img/blog2.jpg" alt="imagen blog">
+          <picture>
+            <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+            <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+          </picture>
         </div>
 
         <div class="entrada__contenido">
@@ -97,7 +122,10 @@
 
       <article class="entrada"> <!-- Cuando tenemos entrada a un foro ocupamos articles, es de HTML 5 -->
         <div class="entrada__imagen">
-          <img src="img/blog3.jpg" alt="imagen blog">
+          <picture>
+            <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+            <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+          </picture>
         </div>
 
         <div class="entrada__contenido">
@@ -179,7 +207,8 @@
     </div>
   </footer>
 
-
+  <!-- Para llamar script de js, hay que hacerlo mejor la parte inferior del todo antes del body -->
+  <script src="./js/modernizr.js"></script>
 </body>
 
 </html>
