@@ -52,24 +52,26 @@
 
     <form class="formulario">
       <div class="campo">
-        <label classform="campo__label" for="nombre">Nombre: </label> <!-- Con for nos permite hacer click en el nombre y nos selecciona para escribir en el formulario atm -->
-        <input classform="campo__field" type="text" placeholder="Tu Nombre" id="nombre"> <!-- El id solo se puede ocupar en este .html -->
-        
-        <div class="campo">
-          <label classform="campo__label" for="email">E-mail: </label> 
-          <input classform="campo__field" type="text" placeholder="Tu Email" id="email"> 
-        </div>
-
-        <div class="campo">
-          <label calssform="campo__label" for="mensaje">Mensaje: </label> 
-          <textarea classform="campo__field campo__field--textarea" id="mensaje"></textarea>
-        </div>
-
-        <div class="campo">
-          <input type="submit" value="Enviar" class="boton boton--primario">
-        </div>
-        
+        <label class="campo__label" for="nombre">Nombre: </label>
+        <!-- Con for nos permite hacer click en el nombre y nos selecciona para escribir en el formulario atm -->
+        <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre">
+        <!-- El id solo se puede ocupar en este .html -->
       </div>
+
+      <div class="campo">
+        <label class="campo__label" for="email">E-mail: </label>
+        <input class="campo__field" type="text" placeholder="Tu Email" id="email">
+      </div>
+
+      <div class="campo">
+        <label class="campo__label" for="mensaje">Mensaje: </label>
+        <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+      </div>
+
+      <div class="campo">
+        <input type="submit" value="Enviar" class="boton boton--primario">
+      </div>
+
     </form>
   </main>
 
@@ -95,6 +97,7 @@
     </div>
   </footer>
 
+  <script src="js/modernizr.js"></script>
 
 </body>
 

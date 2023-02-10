@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="UTF-8"> <!-- Esta etiqueta nos permite interpretar nuestra lengua española -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Este nos permite hacer la interpretacion de una vista media query o celular  -->
-  <meta name="description" content="Pagina web"> <!-- Descripcion de la pagina -->
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Este nos permite hacer la interpretacion de una vista media query o celular  -->
   <title>BlogDeCafe</title>
+  
+  <meta name="description" content="Pagina web"> <!-- Descripcion de la pagina -->
+
 
   <!-- Prefetch --> <!-- Cagar la siguiente pagina para el usuario -->
   <link rel="prefetch" href="./nosotros.html" as="document">
@@ -68,7 +69,8 @@
       <article class="entrada"> <!-- Cuando tenemos entrada a un foro ocupamos articles, es de HTML 5 -->
         <div class="entrada__imagen">
           <picture> <!-- Esta etiqueta permite cargar las imagenes .webp -->
-            <source loading="lazy" srcset="img/blog1.webp" type="image/webp"><!-- Indicamos la direccion a la fuente lo que debe cargar. Si el navegador soporta este formato lo carge, si pasa lo de abajo .... -->
+            <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+            <!-- Indicamos la direccion a la fuente lo que debe cargar. Si el navegador soporta este formato lo carge, si pasa lo de abajo .... -->
             <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
             <!-- Quiere decir loading=lazy. Cuando llegue a leer ese elemento lo carge -->
           </picture>
@@ -207,8 +209,7 @@
     </div>
   </footer>
 
-  <!-- Para llamar script de js, hay que hacerlo mejor la parte inferior del todo antes del body -->
-  <script src="./js/modernizr.js"></script>
+  <script src="js/modernizr.js"></script>
 </body>
 
 </html>
