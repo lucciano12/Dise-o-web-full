@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>BlogDeCafe</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="contenedor">
+      <div class="barra">
+        <a class="logo" href="index.html">
+          <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h1>
+        </a> <!-- Es un enlace dado que al apretar la "imagen" te envia al home de la pagina -->
+
+        <nav class="navegacion">
+          <a href="./nosotros.html" class="navegacion__enlace">Nosotros</a>
+          <a href="./cursos.html" class="navegacion__enlace">Cursos</a>
+          <a href="./contacto.html" class="navegacion__enlace">Contacto</a>
+        </nav>
+
+      </div>
+    </div>
+
+    <div class="header__texto"> <!-- Es un elemento del bloque (header) o mejor dicho es un hijo de la clase header-->
+      <h2 class="no-margin">
+        Blog de cafe con consejos y cursos
+      </h2>
+      <p class="no-margin">
+        Aprende de los expertos con los mejores consejos y recetas
+      </p>
+
+    </div>
+
+  </header>
+
+  <!-- El bloque de abajo (El que esta comentado) nos mostrara la barra del footer cortado -->
+
+  <main class="contenedor">
+    <h3 class="centrar-texto">Entrada de Blog</h3>
+    <div class="contenedor-entrada">
+      <img src="./img/blog1.jpg" alt="imagen entrada blog">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum elementum neque tristique facilisis.
+        Donec faucibus ultrices enim, non blandit lacus ornare vel. Aenean euismod sapien sit amet nibh ultricies, vel
+        porta dolor condimentum. Curabitur feugiat dignissim nulla, sit amet gravida purus dapibus a. Phasellus
+        placerat id ipsum et facilisis. Nam ipsum ex, luctus in nunc vitae, porttitor rhoncus nulla. In tempus euismod
+        dolor sed convallis. Pellentesque dapibus, lorem eu facilisis placerat, nibh tellus eleifend mi, nec ornare
+        ligula diam id risus.
+      </p>
+
+      <p>
+        Quisque vel aliquam justo, quis accumsan ante. Nam ut consectetur ipsum, ac lacinia quam. Cras euismod arcu
+        feugiat congue ultrices. Nulla ac sagittis orci. Maecenas rutrum justo est, sed sagittis odio pellentesque non.
+        Phasellus lacus dolor, bibendum ac elit et, ornare tempus justo. Integer lacus sapien, lobortis ut semper et,
+        sagittis et enim.
+      </p>
+
+      <p>
+        Sed sapien diam, pretium non eros ut, sagittis auctor tellus. Nullam nisl magna, malesuada at lorem in, lobortis
+        aliquam arcu. Nunc auctor, risus vel lacinia molestie, nunc nisl sollicitudin est, iaculis scelerisque arcu
+        ligula nec sem. Integer nec metus turpis. Sed dictum, nisi ac maximus bibendum, est arcu tempus ex, et semper
+        odio tellus in felis. Aenean accumsan ornare nisi vel tincidunt. Donec scelerisque, libero non feugiat sodales,
+        enim nulla pulvinar quam, a lacinia urna est sed justo.
+      </p>
+    </div>
+  </main>
+
+
+
+  <footer class="footer"> <!-- El footer va ser negro para esta clase -->
+    <div class="contenedor">
+      <!-- Ocupamos la misma clase para centrar el footer. Contenedor centra como se hizo la barra de navegacion -->
+      <div class="barra">
+        <a class="logo" href="index.html">
+          <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h1>
+        </a> <!-- Es un enlace dado que al apretar la "imagen" te envia al home de la pagina -->
+
+        <nav class="navegacion">
+          <a href="./nosotros.html" class="navegacion__footer">Nosotros</a>
+          <a href="curso.html" class="navegacion__footer">Curso</a>
+          <a href="contacto.html" class="navegacion__footer">Contacto</a>
+        </nav>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/modernizr.js"></script>
+
+
+</body>
+
+</html>
