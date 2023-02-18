@@ -33,7 +33,7 @@ body {
   /* max-width: 120rem;
   width: 90%;  */
   /* Este es el ancho de la barra, que seria el 100 de toda la pagina */
-  width: min(90%, 120rem); /**NUEVO EN CSS3**/
+  width: min(95%, 120rem); /**NUEVO EN CSS3**/
   /** Es lo mismo que el codigo de arriba (Osea el max-width y width )mas simplificado.
   /**La definicion exacta es que para el elemento a utilizar esta clase busca el valor de pixeles menor entre 90% y 1200 pixeles. 
   /**Osea ejemplo se lo ocupamos en una resolucion de 980px, los elemento de esta clase ocuparan el 90%. Mientras, sea 1500px, se ocupara 1200px ya que busca el valor menor de 90% y 1200px. **/
@@ -293,7 +293,7 @@ img {
     display: flex;
     justify-content: space-between; /* Otro caso en vez de ocupar gap.
     Para poner un elemento en lado izqu y derech */
-    /* gap: 2rem; */
+    gap: 2rem;
     padding: 2rem;
     margin: 2rem;
   }
