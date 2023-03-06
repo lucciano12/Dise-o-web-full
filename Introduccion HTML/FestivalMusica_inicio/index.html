@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="build/css/app.css">
+
+<body>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Rolling Loud Chile</h1>
+
+            <nav class="navegacion-principal">
+                <a href="#">Line Up</a>
+                <a href="#">Galeria</a>
+                <a href="#">Boletos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Rolling Loud Chile</h2>
+                <p>Julio 2023, Santiago, Chile</p>
+            </div>
+        </div>
+
+        <video autoplay muted loop> <!-- Escribimos muted para que este en silencio en caso que la pagina esta alojado en un servidor. controls para darle control al video pausar, reproducir y audio.
+            ya que para que se reproduzca el video automaticamente tiene que estar en muted -->
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+        
+    </div>
+
+
+
+    <!--COMO REFERENCIA -->
+    <!-- <h1 class="prueba">Probando Mixin</h1>-->
+
+</body>
+
+</html>
