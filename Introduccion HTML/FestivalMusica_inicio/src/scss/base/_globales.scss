@@ -19,12 +19,14 @@ body {
 p {
   font-size: 2rem;
   color: v.$negro;
+  list-style: 1.5rem;
 }
 
 .contenedor {
   width: 95%;
   max-width: 120rem; /* un limite de ancho 1200px */
   margin: 0 auto; //Lo centramos
+  
 }
 
 a {
@@ -47,4 +49,9 @@ h2{
 
 h3{
   font-size: 3rem;
+}
+
+img{ //Con esto hacemos que la imagen sea responsive
+  max-width: 100%;
+  display: block;
 }

@@ -326,6 +326,7 @@ body {
 p {
   font-size: 2rem;
   color: #000000;
+  list-style: 1.5rem;
 }
 
 .contenedor {
@@ -356,6 +357,11 @@ h3 {
   font-size: 3rem;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* @mixin heading($color: blue, $borde-radius: false){ //El color lo ponemos por defecto en el caso que no mandamos como parametro a heading
   text-transform: uppercase;
   font-size: 2.4rem;
@@ -370,7 +376,7 @@ h3 {
 /* Nueva sintaxis. 
 Foward es como un puntero, mejor dicho apunta */
 .header {
-  background-color: rgba(242, 242, 35, 0.7803921569);
+  background-color: rgba(231, 231, 16, 0.8196078431);
 }
 .header h1 {
   color: rgba(243, 17, 17, 0.9176470588);
@@ -463,3 +469,43 @@ Foward es como un puntero, mejor dicho apunta */
   font-weight: 700;
   font-size: 2.4rem;
 }
+
+.background {
+  background: rgb(46, 48, 55);
+  background: radial-gradient(circle, rgb(46, 48, 55) 0%, rgb(175, 173, 37) 100%);
+}
+
+.sobre-festival {
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .sobre-festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.contenido-festival {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .contenido-festival {
+    margin-top: 0;
+  }
+}
+.contenido-festival h2 {
+  margin-bottom: 2rem;
+  color: rgba(243, 17, 17, 0.9176470588);
+}
+.contenido-festival .fecha {
+  color: #FFFFFF;
+}
+.contenido-festival p {
+  color: #FFFFFF;
+}
+
+/* @forward 'scroll'; */
