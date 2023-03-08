@@ -5,6 +5,6 @@ En este repositorio encontraremos material desarrollado sobre distintos campos q
 - Pagina consultora en desarrollo web.
 - El mundo del retail como venta de poleras.
 - Blog de café.
-- Festival de musica (En desarrollo, para verlo dirigirse a la rama FestivalMusica).
+- Festival de musica (En desarrollo, para verlo dirigirse a la rama Festival-Musica-LPWEB).
 
 
