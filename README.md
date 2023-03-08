@@ -5,5 +5,5 @@ En este repositorio encontraremos material desarrollado sobre distintos campos q
  - Pagina consultora en desarrollo web.
  - El mundo del retail como venta de poleras.
  - Blog de café.
-
-
+ - Ejemplos de distintos casos existente en una pagina web responsive web media, patrones de diseños y metodos de ajuste de caja como flex y grid.
+ - Material basico de repaso que es JavaScripts y sus caracteristicas como funciones, variables, llamar una API Rest, tipos de datos, etc.
