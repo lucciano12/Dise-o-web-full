@@ -50,7 +50,12 @@
 
         <section class="contenedor sobre-festival">
             <div class="imagen">
-                <img src="img/artista.jpg" alt="Imagen artista promocion">
+                <picture>
+                    <source srcset="build/img/artista.avif" type="image/avif"> <!-- Con esto definimos distinta ruta para cada formato -->
+                    <source srcset="build/img/artista.webp" type="image/webp">
+
+                    <img loading="lazy" width="200" height="300" src="build/img/artista.avif" alt="imagen artista"> <!-- Con esto lo cargamos si no soporta avif-->
+                </picture>
             </div>
 
             <div class="contenido-festival">

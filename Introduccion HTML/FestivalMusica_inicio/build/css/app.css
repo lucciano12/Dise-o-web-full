@@ -359,6 +359,8 @@ h3 {
 
 img {
   max-width: 100%;
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -432,6 +434,7 @@ Foward es como un puntero, mejor dicho apunta */
   max-height: 70rem;
   min-height: 50rem;
   overflow: hidden;
+  background-color: #000000;
 }
 .video .overlay {
   position: absolute;
