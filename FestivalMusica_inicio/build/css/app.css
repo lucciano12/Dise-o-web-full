@@ -536,11 +536,9 @@ Foward es como un puntero, mejor dicho apunta */
   color: #000000;
 }
 
-.escenario {
-  padding-top: 2rem;
-}
 .escenario p {
   /* Creamos un seudo-elemento para la imagen */
+  padding-top: 2rem;
 }
 .escenario p:after {
   content: ""; /* Simpre cuando creamos un seudo hay que poner un content */

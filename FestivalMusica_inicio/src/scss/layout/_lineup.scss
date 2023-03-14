@@ -28,10 +28,10 @@
 }
 
 .escenario {
-  padding-top: 2rem;
-
   p {
     /* Creamos un seudo-elemento para la imagen */
+
+    padding-top: 2rem;
 
     &:after {
       content: ""; /* Simpre cuando creamos un seudo hay que poner un content */
@@ -64,7 +64,6 @@
 
 .VTR .nombre-escenario:after {
   background-image: url(../img/imagen-vtr.png);
-  
 }
 
 .bg-amarillo {
