@@ -502,13 +502,93 @@ Foward es como un puntero, mejor dicho apunta */
 }
 .contenido-festival h2 {
   margin-bottom: 2rem;
-  color: rgba(243, 17, 17, 0.9176470588);
+  color: rgba(228, 12, 12, 0.9176470588);
 }
 .contenido-festival .fecha {
   color: #FFFFFF;
 }
 .contenido-festival p {
   color: #FFFFFF;
+}
+
+.lineup {
+  /* background-color: v.$morado; */
+  padding: 5rem 0;
+}
+.lineup h3,
+.lineup p {
+  text-align: center;
+  color: #FFFFFF;
+}
+.lineup .dia {
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.escenarios-contenedor p {
+  color: #000000;
+}
+
+.escenario {
+  padding-top: 2rem;
+}
+.escenario p {
+  /* Creamos un seudo-elemento para la imagen */
+}
+.escenario p:after {
+  content: ""; /* Simpre cuando creamos un seudo hay que poner un content */
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: no-repeat;
+  background-position: center center;
+  margin: 2rem auto 0 auto;
+}
+
+.calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendario li span {
+  font-weight: 400;
+}
+
+.carozzi .nombre-escenario:after {
+  background-image: url(../img/imagen-carozzi.png);
+}
+
+.VTR .nombre-escenario:after {
+  background-image: url(../img/imagen-vtr.png);
+}
+
+.bg-amarillo {
+  background-color: rgba(231, 231, 16, 0.8196078431);
+}
+.bg-amarillo li:nth-child(odd) {
+  /* Seleccionamos los impares */
+  background-color: rgba(183, 183, 13, 0.8196078431);
+}
+
+.bg-verde {
+  background-color: rgba(15, 233, 116, 0.8941176471);
+}
+.bg-verde li:nth-child(odd) {
+  /* Seleccionamos los impares */
+  background-color: rgba(12, 185, 92, 0.8941176471);
 }
 
 /* @forward 'scroll'; */
