@@ -597,6 +597,7 @@ Foward es como un puntero, mejor dicho apunta */
 }
 .galeria h3 {
   text-align: center;
+  color: #FFFFFF;
 }
 
 .galeria-imagenes {
@@ -654,6 +655,56 @@ Foward es como un puntero, mejor dicho apunta */
   color: #000000;
   display: grid;
   place-items: center;
+  font-weight: 700;
+}
+
+.boletos {
+  padding: 5rem 0;
+}
+.boletos h3 {
+  text-align: center;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .boletos .contenedor-boletos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pase-header, .pase-footer {
+  padding: 0.5rem;
+}
+.pase-header p, .pase-footer p {
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.pase-header {
+  background-color: #F53756;
+}
+.pase-header p {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.pase-body {
+  background-color: #FFFFFF;
+}
+.pase-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pase-body ul li,
+.pase-body ul :nth-child(odd) {
+  background-color: #FFFFFF;
+}
+.pase-footer {
+  background-color: #752F97;
+}
+.pase-footer p {
+  font-size: 2.4rem;
   font-weight: 700;
 }
 
