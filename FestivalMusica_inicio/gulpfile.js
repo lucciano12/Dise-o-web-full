@@ -71,19 +71,29 @@ function css(done){
 }
 
 
+function javascript(done){
+
+  src('src/js/**/*.js')
+    .pipe(dest('build/js'));
+
+  done();
+}
+
 
 //Compilar con dev en npm
 function dev(done){
   watch('src/scss/**/*', css); 
+  watch('src/js/**/*', javascript); /* Mandamos a llamar la funcion javascript */ 
 
   done();
 }
 
 exports.css = css;
+exports.js = javascript;
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
-exports.dev = parallel(imagenes,versionWebp,versionAvif,dev); //Compilan paralelamente
+exports.dev = parallel(imagenes,versionWebp,versionAvif, javascript, dev); //Compilan paralelamente
 
 
 
