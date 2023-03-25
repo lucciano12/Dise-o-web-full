@@ -3,7 +3,42 @@ document.addEventListener('DOMContentLoaded', function () { //la funcion se ejec
 });
 
 function iniciarApp() {
+  navegacionFija();
   crearGaleria();
+  scrollNav();
+}
+
+function navegacionFija(){
+  const barra = document.querySelector('.header');
+  const sobreFestival = document.querySelector('.sobre-festival');
+  const body = document.querySelector('body');
+
+  window.addEventListener('scroll', function () {
+/*     console.log(sobreFestival.getBoundingClientRect()); //Para obtener la info sobre la posicion y tamaño de un elemento en la pagina web
+ */
+    if (sobreFestival.getBoundingClientRect().bottom < 0) { //top se refiere la posicion vertical del elemento, bottom cuando toque la parte superior del navegador con la parte inferior del elemento se ejecuta o reconoce
+      barra.classList.add('fijo');
+      body.classList.add('body-scroll');
+    } else {
+      barra.classList.remove('fijo');
+      body.classList.remove('body-scroll');
+    }
+  });
+}
+
+function scrollNav() {
+  const enlaces = document.querySelectorAll('.navegacion-principal a') //Seleccionamos la clase y el elemento
+
+  enlaces.forEach(enlaces => {
+    enlaces.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const seccionScroll = e.target.attributes.href.value;
+      const seccion = document.querySelector(seccionScroll);
+      seccion.scrollIntoView({ behavior: "smooth" });
+    });
+
+  });
 }
 
 
@@ -42,7 +77,7 @@ function mostrarImagen(id) {
   const overlay = document.createElement('DIV'); //Crea elemento DIV
   overlay.appendChild(imagen); //Se agrega el elemento imagen como hijo del elemeto definido en overlay
   overlay.classList.add('overlay'); // Se crea la clase llamada overlay
-  
+
 
   //Cuando hacemos click en el fondo negro cuando la imagen esta grande para que se vaya
   overlay.onclick = function () {
@@ -58,7 +93,7 @@ function mostrarImagen(id) {
   const cerrarModal = document.createElement('P');
   cerrarModal.textContent = 'X'; //Crea contenido en pantalla
   cerrarModal.classList.add('btn-cerrar');
- 
+
   cerrarModal.onclick = function () {
 
     const body = document.querySelector('body');

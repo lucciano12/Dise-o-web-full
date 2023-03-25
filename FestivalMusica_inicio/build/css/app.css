@@ -325,6 +325,9 @@ body {
 body.fijar-body {
   overflow: hidden;
 }
+body.body-scroll {
+  padding-top: 8.6rem;
+}
 
 p {
   font-size: 2rem;
@@ -382,6 +385,15 @@ img {
 Foward es como un puntero, mejor dicho apunta */
 .header {
   background-color: rgba(231, 231, 16, 0.8196078431);
+}
+@media (min-width: 768px) {
+  .header.fijo {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0.1rem 0.2rem 0.3rem #333;
+  }
 }
 .header h1 {
   color: rgba(243, 17, 17, 0.9176470588);
@@ -664,6 +676,7 @@ Foward es como un puntero, mejor dicho apunta */
 .boletos h3 {
   text-align: center;
   color: #FFFFFF;
+  margin-bottom: 3rem;
 }
 @media (min-width: 768px) {
   .boletos .contenedor-boletos {
@@ -673,6 +686,11 @@ Foward es como un puntero, mejor dicho apunta */
   }
 }
 
+.pase .nombre-pase {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #FFFFFF;
+}
 .pase-header, .pase-footer {
   padding: 0.5rem;
 }
@@ -699,6 +717,8 @@ Foward es como un puntero, mejor dicho apunta */
 .pase-body ul li,
 .pase-body ul :nth-child(odd) {
   background-color: #FFFFFF;
+  padding: 1rem;
+  border-bottom: 1px solid #e1e1e1;
 }
 .pase-footer {
   background-color: #752F97;
@@ -706,6 +726,16 @@ Foward es como un puntero, mejor dicho apunta */
 .pase-footer p {
   font-size: 2.4rem;
   font-weight: 700;
+}
+
+.site-footer {
+  background-color: #000000;
+  padding: 1rem;
+}
+.site-footer p {
+  color: rgba(243, 17, 17, 0.9176470588);
+  margin: 0;
+  text-align: center;
 }
 
 /* @forward 'scroll'; */
