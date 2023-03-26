@@ -8,8 +8,11 @@ const {src, dest, watch, parallel} = require("gulp"); //require importar o extra
  //CSS
 const sass = require('gulp-sass')(require('sass')); // sass en el const, es la funcion a llamar cuando lo compilemos ya que estamos importando el script del package.json
 const plumber = require('gulp-plumber'); //Importamos plumber
-
-
+const autoprefixer = require('autoprefixer'); //Asegura que funcionara en el navegador que tu le digas
+const cssnano = require('cssnano'); //Comprime nuestro codigo CSS
+const postcss = require('gulp-postcss'); //Nos permite transformmar los 2 anteriores mediante este medio
+/* Este 3 ultimos lineas de codigo nos sirvira para mejorar el redimiento del codigo o la pagina web */
+const sourcemaps = require('gulp-sourcemaps');
 
 // Imagenes 
 const cache = require('gulp-cache');
@@ -17,7 +20,8 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp'); 
 const avif = require('gulp-avif');
 
-
+//JavaScript
+const terser = require('gulp-terser-js');
 
 function versionWebp(done){
 
@@ -62,8 +66,11 @@ function css(done){
   //Indentificar el archivo SASS
   src('src/scss/**/*.scss')
     //Compilar
+    .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(sass())
+    .pipe(postcss([autoprefixer(),cssnano()]))
+    .pipe(sourcemaps.write('.'))
     //Almacenarla en el disco duro
     .pipe(dest("build/css"))
 
@@ -74,7 +81,10 @@ function css(done){
 function javascript(done){
 
   src('src/js/**/*.js')
-    .pipe(dest('build/js'));
+    .pipe(sourcemaps.init())
+    .pipe(terser())
+    .pipe(sourcemaps.write('.'))
+    .pipe(dest('build/js'))
 
   done();
 }
