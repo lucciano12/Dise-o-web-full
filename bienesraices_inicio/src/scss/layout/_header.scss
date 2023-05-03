@@ -1,4 +1,39 @@
+.no-webp .inicio{
+  background-image: url(../img/header.jpg);
+}
+
+.webp .inicio{
+  background-image: url(../img/header.webp);
+}
+
 .header{
   background-color: $grisOscuro;
   padding: 1rem 0 3rem 0; /* Arriba, derecha, abajo, izq  */
+
+  &.inicio{
+    background-position: center center;
+    background-size: cover; // Se ajusta a la pantalla sin deformar la imagen
+    @include tablet{
+      min-height: 70rem;
+    }
+  }
+} 
+
+.contenido-header{
+  display: flex;
+  flex-direction: column; // Para que los elementos se pongan uno debajo del otro
+  justify-content: space-between; // Para que el texto se ponga en la parte de abajo
+  
+  @include tablet{
+    min-height: 70rem;
+  }
+  
+  h1{
+    text-align: left;
+    color: $blanco;
+    font-weight: $bold;
+    line-height: 2; // Para que el texto no se pegue
+    max-width: 60rem; // Para que el texto no se salga de la imagen
+  }
+
 }
