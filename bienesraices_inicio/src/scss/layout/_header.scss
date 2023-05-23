@@ -13,9 +13,17 @@
   &.inicio{
     background-position: center center;
     background-size: cover; // Se ajusta a la pantalla sin deformar la imagen
+    
     @include tablet{
       min-height: 70rem;
     }
+
+    .contenido-header{
+      @include tablet{
+        min-height: 70rem;
+      }
+    }
+   
   }
 } 
 
@@ -23,11 +31,7 @@
   display: flex;
   flex-direction: column; // Para que los elementos se pongan uno debajo del otro
   justify-content: space-between; // Para que el texto se ponga en la parte de abajo
-  
-  @include tablet{
-    min-height: 70rem;
-  }
-  
+
   h1{
     text-align: left;
     color: $blanco;
