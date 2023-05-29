@@ -45,9 +45,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet arcu at dui condimentum luctus
           quis non eros. Pellentesque et tortor mollis, tincidunt risus at, aliquam eros. Donec sed auctor quam. Etiam
           non dolor eu turpis dictum viverra. Curabitur tortor lectus, iaculis sagittis commodo non, blandit a nunc.
-          Quisque cursus ut orci at blandit. Ut auctor est sit amet tincidunt bibendum. Nulla eu finibus lectus.
-          Suspendisse feugiat varius finibus. Quisque a ante gravida magna venenatis mattis. Etiam auctor risus purus,
-          vel mattis mauris maximus ut. Sed eleifend felis id interdum ornare.
+          Quisque cursus ut orci at blandit.
         </p>
       </div>
 
@@ -58,9 +56,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet arcu at dui condimentum luctus
           quis non eros. Pellentesque et tortor mollis, tincidunt risus at, aliquam eros. Donec sed auctor quam. Etiam
           non dolor eu turpis dictum viverra. Curabitur tortor lectus, iaculis sagittis commodo non, blandit a nunc.
-          Quisque cursus ut orci at blandit. Ut auctor est sit amet tincidunt bibendum. Nulla eu finibus lectus.
-          Suspendisse feugiat varius finibus. Quisque a ante gravida magna venenatis mattis. Etiam auctor risus purus,
-          vel mattis mauris maximus ut. Sed eleifend felis id interdum ornare.
+          Quisque cursus ut orci at blandit.
         </p>
       </div>
 
@@ -71,14 +67,53 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet arcu at dui condimentum luctus
           quis non eros. Pellentesque et tortor mollis, tincidunt risus at, aliquam eros. Donec sed auctor quam. Etiam
           non dolor eu turpis dictum viverra. Curabitur tortor lectus, iaculis sagittis commodo non, blandit a nunc.
-          Quisque cursus ut orci at blandit. Ut auctor est sit amet tincidunt bibendum. Nulla eu finibus lectus.
-          Suspendisse feugiat varius finibus. Quisque a ante gravida magna venenatis mattis. Etiam auctor risus purus,
-          vel mattis mauris maximus ut. Sed eleifend felis id interdum ornare.
+          Quisque cursus ut orci at blandit.
         </p>
       </div>
       
     </div>
   </main>
+
+  <section class="seccion contenedor">
+    <h2>Casas y Departamentos en Ventas</h2>
+
+    <div class="contenedor-anuncios"> <!-- Esta clase lo utilizamos para realizar el grid de los elementos -->
+      <div class="anuncio">
+        <picture>
+          <source srcset="build/img/anuncio1.webp" type="image/webp">
+          <source srcset="build/img/anuncio1.jpg" type="image/jpeg">
+          <img loading="lazy" src="build/img/anuncio1.jpg" alt="anuncio">
+        </picture>
+        
+        <div class="contenido-anuncio"> <!-- Titulo, descripcion y item -->
+          <h3>Casa de Lujo en el Lago</h3>
+          <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
+          <p class="precio">$3.000.000</p> <!-- Para cambiar el color al precio -->
+
+          <!-- Lista de objeto -->
+          <ul class="iconos-caracteristicas">
+            <li>
+              <img loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
+              <p>3</p>
+            </li>
+            <li>
+              <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
+              <p>3</p>
+            </li>
+            <li>
+              <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono dormitorio">
+              <p>4</p>
+            </li>
+          </ul>
+
+          <a href="anuncios.html" class="boton boton-amarillo"> <!-- Creammos los botones -->
+            Ver Propiedad
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer seccion">
     <div class="contenedor contenedor-footer">
