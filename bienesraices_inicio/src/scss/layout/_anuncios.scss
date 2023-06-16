@@ -16,24 +16,27 @@
     margin: 0;
   }
 
-  .precio{
-    color: $verde;
-    font-weight: $bold;
-    font-size: 3rem;
-  }
+  
+}
+
+.precio{
+  color: $verde;
+  font-weight: $bold;
+  font-size: 3rem;
 }
 
 .iconos-caracteristicas{
   display: flex; //Para poner los items de izq a derecha
   list-style: none;
   padding: 0;
+  max-width: 40rem;
 
   li{
     flex: 1; //Para que tomen todo el espacio disponible
     display: flex;
 
     img{
-      flex: 0 0 5rem;
+      flex: 0 0 3rem;
       margin-right: 1rem;
     }
     p{
