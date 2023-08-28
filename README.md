@@ -1,4 +1,4 @@
-# Diseño-web-full
+# Diseno-web-full
 
 En este repositorio encontraremos material desarrollado sobre distintos campos que poodemos encontrar lo que es pagina web como:
 
