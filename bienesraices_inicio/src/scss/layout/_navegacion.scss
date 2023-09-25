@@ -1,21 +1,54 @@
+.derecha{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet{
+    align-items: flex-end;
+
+  }
+
+  .dark-mode-boton{
+    width: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    filter: invert(100%);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include tablet{
+      margin-top: 0;
+    }
+  }
+}
+
 .barra{
   display: flex;
   flex-direction: column;
   align-items: center; /* Centramos los item */
   padding-top: 3rem;
+
   @include tablet{
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end; 
+
   }
 }
 
 .navegacion{
 
-  display: none;
+  visibility: hidden; //No se vea
+  opacity: 0; //Es la transparencia
+  transition: visibility .3s ease-in-out, opacity 0.5s linear;
 
   @include tablet{
     display: flex;
     align-items: center;
+    opacity: 1;
+    visibility: visible;
   }
 
   a{
@@ -57,5 +90,6 @@
 }  ES LO MISMO QUE ARRIBA*/
 
 .mostrar{
-  display: block;
+  visibility: visible; //Se vea
+  opacity: 1;
 }

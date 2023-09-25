@@ -1,8 +1,19 @@
 document.addEventListener('DOMContentLoaded', function(){
   
     eventListeners(); /* Funcion creada */
+
+    darkMode();
 });
 /* Estara escuchando el evento cuando el documento sea cargado htm, css y js. Y que ejectue la funcion */
+
+function darkMode(){
+  const botonDarkMode = document.querySelector('.dark-mode-boton');
+
+  botonDarkMode.addEventListener('click', function(){
+    document.body.classList.toggle('dark-mode'); //Esto nos sirve para reconocer si esta la clase de dark mode. Al apretar el boton activa el modo nocturno. En detalle
+    //Apretamos el boton y aparece la clase dark mode en el body o desaparece
+  });
+}
 
 function eventListeners(){
   const mobileMenu = document.querySelector('.mobile-menu'); /* Aqui seleccionamos especificamente un elemento del docu HTML, seria la clase mobile-menu */
