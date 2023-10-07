@@ -42,7 +42,8 @@
 
   visibility: hidden; //No se vea
   opacity: 0; //Es la transparencia
-  transition: visibility .3s ease-in-out, opacity 0.5s linear;
+  height: 0;
+  transition: visibility .3s ease-in-out, opacity 0.5s linear, height .5s linear;
 
   @include tablet{
     display: flex;
@@ -92,4 +93,5 @@
 .mostrar{
   visibility: visible; //Se vea
   opacity: 1;
+  height: auto;
 }
